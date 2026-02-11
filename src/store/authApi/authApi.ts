@@ -1,12 +1,13 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { authHost } from "../../api/hosts";
-import { IUser } from "../../types/userTypes";
+import { IUser, TLogin } from "../../types/userTypes";
 import {
   setRefresh,
   setToken,
   setTokenError,
   setUserId,
 } from "../userSlice/userSlice";
+import { AuthResponse } from "./types";
 
 export const getAuthRtq = createApi({
   reducerPath: "authSlice/getAuthUserRtq",
@@ -26,7 +27,7 @@ export const getAuthRtq = createApi({
   }),
 
   endpoints: (builder) => ({
-    getAuth: builder.mutation({
+    getAuth: builder.mutation<AuthResponse, TLogin>({
       query: (credentials) => ({
         url: "/auth/login",
         method: "POST",
@@ -36,7 +37,8 @@ export const getAuthRtq = createApi({
       async onQueryStarted(_, { dispatch, queryFulfilled }) {
         try {
           const { data } = await queryFulfilled;
-          dispatch(setToken(data.token));
+
+          dispatch(setToken(data.accessToken));
           dispatch(setUserId(data.id));
           dispatch(setRefresh(data.refreshToken));
         } catch (error) {

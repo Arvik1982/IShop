@@ -12,6 +12,8 @@ function App() {
   const [link, setLink] = useState("");
   const token = useSelector((state: RootState) => state.userSlice.token);
   const { isLoading } = useGetUserQuery(undefined, { skip: !token });
+  console.log("APP");
+  console.log({ token });
 
   return (
     <>

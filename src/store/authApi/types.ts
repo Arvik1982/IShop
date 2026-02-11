@@ -1,0 +1,11 @@
+export type AuthResponse = {
+  accessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAsInVzZXJuYW1lIjoiamFja3NvbmUiLCJlbWFpbCI6ImphY2tzb24uZXZhbnNAeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiSmFja3NvbiIsImxhc3ROYW1lIjoiRXZhbnMiLCJnZW5kZXIiOiJtYWxlIiwiaW1hZ2UiOiJodHRwczovL2R1bW15anNvbi5jb20vaWNvbi9qYWNrc29uZS8xMjgiLCJpYXQiOjE3NzA3OTgyMDQsImV4cCI6MTc3MDc5ODUwNH0.orOF-F5w8bhb4a8gOIpORqarpGpP7kgxuxUdNbyAnN8";
+  refreshToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAsInVzZXJuYW1lIjoiamFja3NvbmUiLCJlbWFpbCI6ImphY2tzb24uZXZhbnNAeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiSmFja3NvbiIsImxhc3ROYW1lIjoiRXZhbnMiLCJnZW5kZXIiOiJtYWxlIiwiaW1hZ2UiOiJodHRwczovL2R1bW15anNvbi5jb20vaWNvbi9qYWNrc29uZS8xMjgiLCJpYXQiOjE3NzA3OTgyMDQsImV4cCI6MTc3MzM5MDIwNH0.4R1AuINOksiKE14wOA41UIbmFSwrrUIRcV3Np9NBZ6Q";
+  id: 20;
+  username: "jacksone";
+  email: "jackson.evans@x.dummyjson.com";
+  firstName: "Jackson";
+  lastName: "Evans";
+  gender: "male";
+  image: "https://dummyjson.com/icon/jacksone/128";
+};

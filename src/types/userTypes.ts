@@ -11,6 +11,12 @@ export interface IUser {
   commonError: string;
 }
 
+export type TLogin = {
+  expiresInMins: number;
+  password: string;
+  username: string;
+};
+
 export type TUserResponse = {
   data: IUser;
   isLoading: boolean;
