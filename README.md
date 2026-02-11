@@ -5,11 +5,17 @@ React 18+ TypeScript application built with Vite, featuring Redux state manageme
 
 
 ## ✨ Key Features
+
 ✅ Redux Toolkit + RTK Query for state & API management
+
 ✅ React Router v6 for SPA navigation
+
 ✅ TypeScript strict typing throughout
+
 ✅ Storybook 8 for component documentation
+
 ✅ Jest + RTL for comprehensive testing
+
 ✅ TailwindCSS ready (add @tailwindcss/vite)
 
 ## 🛠 Tech Stack
@@ -32,7 +38,6 @@ React 18+ TypeScript application built with Vite, featuring Redux state manageme
 
 npm install
 npm run dev          # http://localhost:5173
-npm run storybook    # http://localhost:6006
 npm run test         # Run tests
 
 ```
