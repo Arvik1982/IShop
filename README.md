@@ -1,8 +1,10 @@
 # Shop examle
 
-📋 Project Overview
-React 18+ TypeScript application built with Vite, featuring Redux state management, React Router, and Storybook. Production-ready with full testing setup and GitHub Pages deployment.
+## 📋 Project Overview
 
+React 18+ TypeScript application built with Vite, featuring Redux state management, React Router, and Storybook. 
+
+Production-ready with full testing setup and GitHub Pages deployment.
 
 ## ✨ Key Features
 
