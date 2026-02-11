@@ -1,4 +1,4 @@
-# Goods4you Shop
+# Goods4you Shop (Example)
 
 ## 📋 Project Overview
 
