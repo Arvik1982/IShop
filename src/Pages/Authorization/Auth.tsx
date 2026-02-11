@@ -19,14 +19,14 @@ export default function Authorization() {
   const [getAuth, { isLoading, error }] = useGetAuthMutation<TUserResponse>();
   error && console.log(error.data);
   const handleLogin = async (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => {
     e.preventDefault();
 
     if (credentials.username && credentials.password) {
       try {
-        const credentialsJson = JSON.stringify(credentials);
-        await getAuth(credentialsJson).unwrap();
+        // const credentialsJson = JSON.stringify(credentials);
+        await getAuth(credentials).unwrap();
       } catch (err) {
         console.log("Login failed");
       }
