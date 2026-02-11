@@ -44,4 +44,6 @@ npm run test         # Run tests
 
 ```
 ## 🌐 Live Demo
-
+```
+https://arvik1982.github.io/IShop/
+```
