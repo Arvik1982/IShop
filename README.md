@@ -1,4 +1,4 @@
-# Shop examle
+# Goods4you Shop
 
 ## 📋 Project Overview
 
